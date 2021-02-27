@@ -49,7 +49,7 @@ const Dashboard: React.FC = () => {
     <Container>
       <Header>
         <HeaderTitle>
-          Bem vindo, {'\n'}
+          Seja muito Bem vindo, {'\n'}
           <UserName>{user.name}</UserName>
         </HeaderTitle>
 
