@@ -174,8 +174,7 @@ const AppointmentDatePicker: React.FC = () => {
             is24Hour
             display="calendar"
             value={selectedDate}
-            onChange={(_, date) => date && setSelectedDate(date)}
-            textColor="#f4ede8"
+            
             minimumDate={minimumDate}
           />
         </Calendar>

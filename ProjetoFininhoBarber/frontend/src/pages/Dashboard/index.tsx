@@ -171,11 +171,11 @@ const Dashboard: React.FC = () => {
               <strong>Agendamento a seguir</strong>
               <div>
                 <img
-                  src={nextAppointment.user.avatar_url}
-                  alt={nextAppointment.user.name}
+                   src={nextAppointment.user.avatar_url}
+                   alt={nextAppointment.user.name}
                 />
 
-                <strong>{nextAppointment.user.name}</strong>
+                {/* <strong>{nextAppointment.user.name}</strong> */}
                 <span>
                   <FiClock />
                   {nextAppointment.hourFormatted}
