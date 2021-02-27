@@ -21,9 +21,9 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/bigode.png';
 
-import { Container, Title, BackToSignIn, BackToSignInText } from './styles';
+import { Container, Title, BackToSignIn, BackToSignInText, TitleLogo } from './styles';
 
 interface SignUpFormData {
   name: string;
@@ -93,7 +93,8 @@ const SignUp: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-            <Image source={logoImg} />
+          <Image source={logoImg} style={{ height: 50, width: 100, marginTop: 10, marginBottom: -10,}} />
+          <TitleLogo>Fininho Barber</TitleLogo>
 
             <View>
               <Title>Crie sua conta</Title>

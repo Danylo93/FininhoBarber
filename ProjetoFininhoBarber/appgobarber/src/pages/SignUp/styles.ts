@@ -15,6 +15,12 @@ export const Title = styled.Text`
   font-family: 'RobotoSlab-Medium';
   margin: 64px 0 24px;
 `;
+export const TitleLogo = styled.Text`
+  font-size: 24px;
+  color: #f4ede8;
+  font-family: 'RobotoSlab-Medium';
+  margin: 15px;
+`;
 
 export const BackToSignIn = styled.TouchableOpacity`
   position: absolute;

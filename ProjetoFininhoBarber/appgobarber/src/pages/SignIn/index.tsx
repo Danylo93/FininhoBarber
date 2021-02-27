@@ -22,7 +22,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/bigode.png';
 
 import {
   Container,
@@ -31,6 +31,7 @@ import {
   ForgotPasswordText,
   CreateAccountButton,
   CreateAccountButtonText,
+  TitleLogo,
 } from './styles';
 
 interface SignInFormData {
@@ -98,7 +99,8 @@ const SignIn: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-            <Image source={logoImg} />
+            <Image source={logoImg} style={{ height: 50, width: 100, marginTop: 10, marginBottom: -10,}} />
+            <TitleLogo>Fininho Barber</TitleLogo>
 
             <View>
               <Title>Faça seu logon</Title>
