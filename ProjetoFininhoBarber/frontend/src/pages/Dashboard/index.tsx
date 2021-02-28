@@ -19,7 +19,7 @@ import {
   Calendar,
 } from './styles';
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/bigode.svg';
 import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 
@@ -135,14 +135,16 @@ const Dashboard: React.FC = () => {
     );
   }, [appointments]);
 
+  console.log("Teste Foto de Perfil"+ user.avatar_url);
   return (
     <Container>
       <Header>
         <HeaderContent>
-          <img src={logoImg} alt="GoBarber" />
-
+          <img src={logoImg} style={{ height: 70 , width: 70,padding: 10,}} alt="Fininho Barber" />
+          <h4>Fininho Barber</h4>
           <Profile>
             <img src={user.avatar_url} alt={user.name} />
+
             <div>
               <span>Bem-vindo,</span>
               <Link to="/profile">
