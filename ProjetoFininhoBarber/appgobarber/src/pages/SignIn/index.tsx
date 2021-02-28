@@ -99,7 +99,7 @@ const SignIn: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-            <Image source={logoImg} style={{ height: 50, width: 100, marginTop: 10, marginBottom: -10,}} />
+            <Image source={logoImg} style={{ height: 50, width: 100, marginTop: 30, marginBottom: -30,}} />
             <TitleLogo>Fininho Barber</TitleLogo>
 
             <View>
@@ -133,6 +133,7 @@ const SignIn: React.FC = () => {
               />
 
               <Button
+              style={{margin:50, padding:10, alignSelf: 'center', alignContent: 'center'}}
                 onPress={() => {
                   formRef.current?.submitForm();
                 }}

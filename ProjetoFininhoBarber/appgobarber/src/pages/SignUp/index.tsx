@@ -93,8 +93,8 @@ const SignUp: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-          <Image source={logoImg} style={{ height: 50, width: 100, marginTop: 10, marginBottom: -10,}} />
-          <TitleLogo>Fininho Barber</TitleLogo>
+          <Image source={logoImg} style={{ height: 50, width: 100, marginTop: 50, marginBottom: -30,}} />
+            <TitleLogo>Fininho Barber</TitleLogo>
 
             <View>
               <Title>Crie sua conta</Title>
@@ -137,7 +137,12 @@ const SignUp: React.FC = () => {
                 onSubmitEditing={() => formRef.current?.submitForm()}
               />
 
-              <Button onPress={() => formRef.current?.submitForm()}>
+              <Button
+              style={{margin:50, padding:10, alignSelf: 'center', alignContent: 'center'}}
+                onPress={() => {
+                  formRef.current?.submitForm();
+                }}
+              >
                 Entrar
               </Button>
             </Form>
