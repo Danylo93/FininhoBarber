@@ -135,12 +135,16 @@ const Dashboard: React.FC = () => {
     );
   }, [appointments]);
 
-  console.log("Teste Foto de Perfil"+ user.avatar_url);
+  // console.log("Teste Agendamento a seguir : "+ nextAppointment);
   return (
     <Container>
       <Header>
         <HeaderContent>
-          <img src={logoImg} style={{ height: 70 , width: 70,padding: 10,}} alt="Fininho Barber" />
+          <img
+            src={logoImg}
+            style={{ height: 70, width: 70, padding: 10 }}
+            alt="Fininho Barber"
+          />
           <h4>Fininho Barber</h4>
           <Profile>
             <img src={user.avatar_url} alt={user.name} />
@@ -173,8 +177,8 @@ const Dashboard: React.FC = () => {
               <strong>Agendamento a seguir</strong>
               <div>
                 <img
-                   src={nextAppointment.user.avatar_url}
-                   alt={nextAppointment.user.name}
+                  src={nextAppointment.user.avatar_url}
+                  alt={nextAppointment.user.name}
                 />
 
                 {/* <strong>{nextAppointment.user.name}</strong> */}
