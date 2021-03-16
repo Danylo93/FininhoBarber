@@ -74,7 +74,11 @@ const SignIn: React.FC = () => {
     <Container>
       <Content>
         <AnimationContainer>
-          <img src={logoImg} alt="FininhoBarber" style={{width: 450, height: 100, padding: -30}}/>
+          <img
+            src={logoImg}
+            alt="FininhoBarber"
+            style={{ width: 450, height: 100, padding: -30 }}
+          />
           <h3>Fininho Barber</h3>
           <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Faça seu logon</h1>
