@@ -1,4 +1,4 @@
-# ProjetoFininhoBarber
+# Fininho Barber
 
 ## Aplicativo Web 
 O propósito do Aplicativo é gerenciar o agendamento de clientes que agendaram um horário no aplicativo Fininho Barber
