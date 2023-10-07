@@ -3,8 +3,8 @@
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
-    "username": "postgres",
-    "password": "postgres",
+    "username": "docker",
+    "password": "docker",
     "database": "postgres",
     "entities": [
       "./src/modules/**/infra/typeorm/entities/*.ts"

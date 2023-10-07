@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  api-solid-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=postgres
+  mongo-express:
+    image: mongo-express
+    ports:
+      - 8081:8081
+    links:
+      - mongo
+    networks:
+      - mongo-compose-network
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - mongo-compose-network
+
+networks:
+    mongo-compose-network:
+      driver: bridge
