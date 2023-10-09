@@ -177,7 +177,7 @@ const Profile: React.FC = () => {
                 source={{
                   uri:
                     user.avatar_url ||
-                    'https://api.adorable.io/avatars/186/abott@adorable.png',
+                  'https://github.com/DAnylo93.png',
                 }}
               />
             </UserAvatarButton>

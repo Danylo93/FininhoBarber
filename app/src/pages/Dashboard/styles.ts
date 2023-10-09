@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { FlatList } from 'react-native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RectButton } from 'react-native-gesture-handler';
-
+import { TouchableOpacity } from 'react-native';
 import { Provider } from './index';
 
 export const Container = styled.View`
@@ -50,7 +50,7 @@ export const ProvidersListTitle = styled.Text`
   font-family: ${({ theme }) => theme.fonts.medium};
 `;
 
-export const ProviderContainer = styled(RectButton)`
+export const ProviderContainer = styled(TouchableOpacity)`
   background: ${({ theme }) => theme.colors.shape};
   border-radius: 10px;
   padding: 20px;
@@ -76,7 +76,7 @@ export const ProviderName = styled.Text`
   font-size: 18px;
 `;
 
-export const ProviderMeta = styled.View`
+export const ProviderMeta = styled(TouchableOpacity)`
   flex-direction: row;
   align-items: center;
   margin-top: 8px;

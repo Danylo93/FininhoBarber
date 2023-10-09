@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RectButton } from 'react-native-gesture-handler';
 import { FlatList } from 'react-native';
-
+import { TouchableOpacity } from 'react-native';
 import { Provider } from './index';
 
 interface ProviderContainerProps {
@@ -62,7 +62,7 @@ export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
   padding: 32px 24px;
 `;
 
-export const ProviderContainer = styled(RectButton)<ProviderContainerProps>`
+export const ProviderContainer = styled(TouchableOpacity)<ProviderContainerProps>`
   background: ${({ theme, selected }) =>
     selected ? theme.colors.orange : theme.colors.shape};
   flex-direction: row;
@@ -96,7 +96,7 @@ export const Title = styled.Text`
   margin: 0 24px 24px;
 `;
 
-export const OpenDatePickerButton = styled(RectButton)`
+export const OpenDatePickerButton = styled(TouchableOpacity)`
   height: 48px;
   background: ${({ theme }) => theme.colors.orange};
   border-radius: 10px;
@@ -132,7 +132,7 @@ export const SectionContent = styled.ScrollView.attrs({
   showsHorizontalScrollIndicator: false,
 })``;
 
-export const Hour = styled(RectButton)<HourProps>`
+export const Hour = styled(TouchableOpacity)<HourProps>`
   padding: 12px;
   background: ${({ theme, selected }) =>
     selected ? theme.colors.orange : theme.colors.shape};
@@ -149,7 +149,7 @@ export const HourText = styled.Text<HourTextProps>`
   font-size: 16px;
 `;
 
-export const CreateAppointmentButton = styled(RectButton)`
+export const CreateAppointmentButton = styled(TouchableOpacity)`
   height: 50px;
   background: ${({ theme }) => theme.colors.orange};
   border-radius: 10px;

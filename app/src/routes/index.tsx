@@ -6,15 +6,17 @@ import AppRoutes from './app.routes';
 import AuthRoutes from './auth.routes';
 
 import { useAuth } from '../hooks/auth';
+import { ActivityIndicator } from 'react-native/Libraries/Components/ActivityIndicator/ActivityIndicator';
+import { View } from 'react-native';
 
 const Routes: React.FC = () => {
   const { user, loading } = useAuth();
 
-  useEffect(() => {
-    if (!loading) {
-      SplashScreen.hide();
-    }
-  }, [loading]);
+  // useEffect(() => {
+  //   if (!loading) {
+  //     SplashScreen.hide();
+  //   }
+  // }, [loading]);
 
   // if (loading) {
   //   return (

@@ -62,7 +62,8 @@ const Dashboard: React.FC = () => {
         </HeaderTitle>
 
         <ProfileButton onPress={navigateToProfile}>
-          <UserAvatar source={{ uri: user.avatar_url }} />
+          <UserAvatar source={{ uri: user.avatar_url ||
+                  'https://github.com/DAnylo93.png', }} />
         </ProfileButton>
       </Header>
 
@@ -80,7 +81,7 @@ const Dashboard: React.FC = () => {
               source={{
                 uri:
                   provider.avatar_url ||
-                  'https://api.adorable.io/avatars/72/abott@adorable.png',
+                  'https://github.com/DAnylo93.png',
               }}
             />
 

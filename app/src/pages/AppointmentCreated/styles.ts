@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
-
+import { TouchableOpacity } from 'react-native';
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
@@ -23,7 +23,7 @@ export const Description = styled.Text`
   margin-top: 16px;
 `;
 
-export const OkButton = styled(RectButton)`
+export const OkButton = styled(TouchableOpacity)`
   background: ${({ theme }) => theme.colors.orange};
   justify-content: center;
   align-items: center;

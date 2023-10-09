@@ -6,9 +6,8 @@ import React, {
   useEffect,
 } from 'react';
 
-import AsyncStorage from '@react-native-community/async-storage';
-
 import api from '../services/api';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 interface User {
   id: string;
