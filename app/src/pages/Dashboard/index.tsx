@@ -22,6 +22,7 @@ import {
   ProviderMeta,
   ProviderMetaText,
 } from './styles';
+import { Button } from 'react-native/Libraries/Components/Button';
 
 export interface Provider {
   id: string;
@@ -60,11 +61,15 @@ const Dashboard: React.FC = () => {
           Bem vindo,{'\n'}
           <UserName>{user.name}</UserName>
         </HeaderTitle>
+        
 
         <ProfileButton onPress={navigateToProfile}>
           <UserAvatar source={{ uri: user.avatar_url ||
                   'https://github.com/DAnylo93.png', }} />
         </ProfileButton>
+
+              
+                
       </Header>
 
       <ProvidersList

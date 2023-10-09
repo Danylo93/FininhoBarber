@@ -17,8 +17,8 @@ const defaultTheme: DefaultTheme = {
   },
 
   fonts: {
-    regular: 'RobotoSlab-Regular',
-    medium: 'RobotoSlab-Medium',
+    regular: 'Roboto_400Regular',
+    medium: 'Roboto_700Bold',
   },
 };
 

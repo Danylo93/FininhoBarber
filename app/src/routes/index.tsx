@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 // import { ActivityIndicator, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-
+import {
+	Roboto_400Regular,
+	Roboto_700Bold,
+	useFonts
+} from '@expo-google-fonts/roboto'
 import AppRoutes from './app.routes';
 import AuthRoutes from './auth.routes';
 

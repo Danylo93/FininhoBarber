@@ -13,7 +13,7 @@ export const Container = styled.View`
 export const TitleLogo = styled.Text`
   font-size: 24px;
   color: #f4ede8;
-  font-family: 'RobotoSlab-Medium';
+  font-family: 'Roboto_400Regular';
   margin: 15px;
 `;
 
