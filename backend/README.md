@@ -68,5 +68,5 @@
 - Cada agendamento deve durar 1h exatamente;
 - O usuário não pode agendar em um horário já ocupado;
 
-criar redis :
-docker run --name redis -p 6379:6379 -d -t redis:alpine
+yarn typeorm migration:run
+yarn typeorm migration:create -n CreateProfile

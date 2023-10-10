@@ -22,7 +22,7 @@ import {
   ProviderMeta,
   ProviderMetaText,
 } from './styles';
-import { Button } from 'react-native/Libraries/Components/Button';
+
 
 export interface Provider {
   id: string;
@@ -33,7 +33,7 @@ export interface Provider {
 const Dashboard: React.FC = () => {
   const [providers, setProviders] = useState<Provider[]>([]);
 
-  const { user } = useAuth();
+  const { user, signOut } = useAuth();
   const { navigate } = useNavigation();
   const theme = useTheme();
 
@@ -63,11 +63,13 @@ const Dashboard: React.FC = () => {
         </HeaderTitle>
         
 
+
         <ProfileButton onPress={navigateToProfile}>
           <UserAvatar source={{ uri: user.avatar_url ||
-                  'https://github.com/DAnylo93.png', }} />
+                  'https://github.com/DAnylo93.png'}} />
         </ProfileButton>
 
+        <Icon name="log-out" size={14} color={theme.colors.orange} onPress={signOut} />
               
                 
       </Header>

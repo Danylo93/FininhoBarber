@@ -2240,14 +2240,12 @@
     prompts "^2.4.0"
     semver "^7.5.2"
 
-"@react-native-community/datetimepicker@^2.4.1":
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/@react-native-community/datetimepicker/-/datetimepicker-2.6.2.tgz#552f703638ae8da9389d8610f9a880940d3a6192"
-  integrity sha512-JXtdGxjGijKcK8Pr0jl21A0q1a14G/6BcHMh4HpE/gS29EZe4AgAumn1ScMcZcPsB7oirin5LJtx8rkSWcEVFA==
+"@react-native-community/datetimepicker@7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/datetimepicker/-/datetimepicker-7.2.0.tgz#db8c03dbf49bf3c24b06b617a8467d8b05511f62"
+  integrity sha512-dO1sQy83M/EvnHE2egto05iwXZX7EYn5f/VDMp6afZFRFXRiRo7CzB3VFg4B55gJRJMNBv06NYMLPM3SlpnEGQ==
   dependencies:
     invariant "^2.2.4"
-  optionalDependencies:
-    react-native-windows "^0.62.0-0"
 
 "@react-native-community/eslint-config@^1.0.0":
   version "1.1.0"
@@ -3823,7 +3821,7 @@ cli-cursor@^3.1.0:
   dependencies:
     restore-cursor "^3.1.0"
 
-cli-spinners@^2.0.0, cli-spinners@^2.2.0, cli-spinners@^2.5.0:
+cli-spinners@^2.0.0, cli-spinners@^2.5.0:
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.9.1.tgz#9c0b9dad69a6d47cbb4333c14319b060ed395a35"
   integrity sha512-jHgecW0pxkonBJdrKsqxgRX9AcG+u/5k0Q7WPDfi8AogLAdwxEkyYYNWwZ5GvVFoFx2uiY1eNcSK00fh+1+FyQ==
@@ -4196,14 +4194,6 @@ cosmiconfig@^8.0.0:
     js-yaml "^4.1.0"
     parse-json "^5.2.0"
     path-type "^4.0.0"
-
-create-react-class@^15.6.3:
-  version "15.7.0"
-  resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.7.0.tgz#7499d7ca2e69bb51d13faf59bd04f0c65a1d6c1e"
-  integrity sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng==
-  dependencies:
-    loose-envify "^1.3.1"
-    object-assign "^4.1.1"
 
 create-require@^1.1.0:
   version "1.1.1"
@@ -4683,7 +4673,7 @@ env-editor@^0.4.1:
   resolved "https://registry.yarnpkg.com/env-editor/-/env-editor-0.4.2.tgz#4e76568d0bd8f5c2b6d314a9412c8fe9aa3ae861"
   integrity sha512-ObFo8v4rQJAE59M69QzwloxPZtd33TpYEIjtKD1rrFDcM1Gd7IkDxEBU+HriziN6HSHQnBJi8Dmy+JWkav5HKA==
 
-envinfo@^7.5.0, envinfo@^7.7.2:
+envinfo@^7.7.2:
   version "7.10.0"
   resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.10.0.tgz#55146e3909cc5fe63c22da63fb15b05aeac35b13"
   integrity sha512-ZtUjZO6l5mwTHvc1L9+1q5p/R3wTopcfqMW8r5t8SJSKqeVI/LtajORwRFEKpEFuekjD0VBjwu1HMxL4UalIRw==
@@ -5927,7 +5917,7 @@ glob@7.1.6:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@7.2.3, glob@^7.0.0, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.5, glob@^7.1.6, glob@^7.2.0:
+glob@7.2.3, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.5, glob@^7.1.6, glob@^7.2.0:
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.3.tgz#b8df0fb802bbfa8e89bd1d938b4e16578ed44f2b"
   integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
@@ -6413,11 +6403,6 @@ internal-slot@^1.0.5:
     get-intrinsic "^1.2.0"
     has "^1.0.3"
     side-channel "^1.0.4"
-
-interpret@^1.0.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
-  integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
 invariant@*, invariant@^2.2.4:
   version "2.2.4"
@@ -7887,7 +7872,7 @@ longest@^2.0.1:
   resolved "https://registry.yarnpkg.com/longest/-/longest-2.0.1.tgz#781e183296aa94f6d4d916dc335d0d17aefa23f8"
   integrity sha512-Ajzxb8CM6WAnFjgiloPsI3bF+WCxcvhdIG3KNA2KN962+tdBsHcuQ4k4qX/EcS/2CRkcc0iAkR956Nib6aXU/Q==
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -7935,13 +7920,6 @@ makeerror@1.0.12:
   integrity sha512-JmqCvUhmt43madlpFzG4BQzG2Z3m6tvQDNKdClZnO3VbIudJYmxsT0FNJMeiB2+JTSlTQTSbU8QdesVmwJcmLg==
   dependencies:
     tmpl "1.0.5"
-
-map-age-cleaner@^0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/map-age-cleaner/-/map-age-cleaner-0.1.3.tgz#7d583a7306434c055fe474b0f45078e6e1b4b92a"
-  integrity sha512-bJzx6nMoP6PDLPBFmg7+xRKeFZvFboMrGlxmNj9ClvX53KrmvM5bXFXEWjbz4cz1AFn+jWJ9z/DJSz7hrs0w3w==
-  dependencies:
-    p-defer "^1.0.0"
 
 map-cache@^0.2.2:
   version "0.2.2"
@@ -8004,15 +7982,6 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
-
-mem@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/mem/-/mem-4.3.0.tgz#461af497bc4ae09608cdb2e60eefb69bff744178"
-  integrity sha512-qX2bG48pTqYRVmDB37rn/6PT7LcR8T7oAX3bf99u1Tt1nzxYfxkgqDwUwolPlXweM0XzBOBFzSx4kfp7KP1s/w==
-  dependencies:
-    map-age-cleaner "^0.1.1"
-    mimic-fn "^2.0.0"
-    p-is-promise "^2.0.0"
 
 memoize-one@^5.0.0:
   version "5.2.1"
@@ -8439,7 +8408,7 @@ mimic-fn@^1.0.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
 
-mimic-fn@^2.0.0, mimic-fn@^2.1.0:
+mimic-fn@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
@@ -8969,7 +8938,7 @@ optionator@^0.8.1, optionator@^0.8.3:
     type-check "~0.3.2"
     word-wrap "~1.2.3"
 
-ora@3.4.0, ora@^3.4.0:
+ora@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/ora/-/ora-3.4.0.tgz#bf0752491059a3ef3ed4c85097531de9fdbcd318"
   integrity sha512-eNwHudNbO1folBP3JsZ19v9azXWtQZjICdr3Q0TDPIaeBQ3mXLrh54wM+er0+hSp+dWKf+Z8KM58CYzEyIYxYg==
@@ -9014,11 +8983,6 @@ osenv@^0.1.5:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-p-defer@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
-  integrity sha512-wB3wfAxZpk2AzOfUMJNL+d36xothRSyj8EXOa4f6GMqYDN9BJaaSISbsk+wS9abmnebVw95C2Kb5t85UmpCxuw==
-
 p-each-series@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-each-series/-/p-each-series-1.0.0.tgz#930f3d12dd1f50e7434457a22cd6f04ac6ad7f71"
@@ -9030,11 +8994,6 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
   integrity sha512-LICb2p9CB7FS+0eR1oqWnHhp0FljGLZCWBE9aix0Uye9W8LTQPwMTYVGWQWIw9RdQiDg4+epXQODwIYJtSJaow==
-
-p-is-promise@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/p-is-promise/-/p-is-promise-2.1.0.tgz#918cebaea248a62cf7ffab8e3bca8c5f882fc42e"
-  integrity sha512-Y3W0wlRPK8ZMRbNq97l4M5otioeA5lm1z7bkNkxCka8HSPjR0xRWmpCmc9utiaLP9Jb1eD8BgeIxTW4AIF45Pg==
 
 p-limit@^1.1.0:
   version "1.3.0"
@@ -9601,25 +9560,6 @@ react-native-vector-icons@^6.6.0:
     prop-types "^15.7.2"
     yargs "^15.0.2"
 
-react-native-windows@^0.62.0-0:
-  version "0.62.22"
-  resolved "https://registry.yarnpkg.com/react-native-windows/-/react-native-windows-0.62.22.tgz#4c8c6544496199702180c9c7b4cd34492966c842"
-  integrity sha512-kYM+VczfDRNhs8vifa/D5ibSIGWDkVHZ8J2913HR8lPkz/qx5Tmnfq0IOj0KOMNN1ZDx4/I1PsTvfpxgOeIbvQ==
-  dependencies:
-    "@babel/runtime" "^7.8.4"
-    cli-spinners "^2.2.0"
-    create-react-class "^15.6.3"
-    envinfo "^7.5.0"
-    fbjs "^1.0.0"
-    glob "^7.1.1"
-    ora "^3.4.0"
-    prop-types "^15.7.2"
-    regenerator-runtime "^0.13.2"
-    shelljs "^0.7.8"
-    username "^5.1.0"
-    uuid "^3.3.2"
-    xml-parser "^1.2.1"
-
 react-native@0.72.5:
   version "0.72.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.72.5.tgz#2c343fa6f3ead362cf07376634a33a4078864357"
@@ -9779,13 +9719,6 @@ recast@^0.21.0:
     esprima "~4.0.0"
     source-map "~0.6.1"
     tslib "^2.0.1"
-
-rechoir@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
-  integrity sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==
-  dependencies:
-    resolve "^1.1.6"
 
 redent@^2.0.0:
   version "2.0.0"
@@ -10043,7 +9976,7 @@ resolve@1.1.7:
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
   integrity sha512-9znBF0vBcaSN3W2j7wKvdERPwqTxSpCq+if5C0WoTCyV9n24rua28jeuQ2pL/HOf+yUe/Mef+H/5p60K0Id3bg==
 
-resolve@^1.1.6, resolve@^1.10.0, resolve@^1.12.0, resolve@^1.14.2, resolve@^1.15.1, resolve@^1.22.0, resolve@^1.22.1, resolve@^1.22.4:
+resolve@^1.10.0, resolve@^1.12.0, resolve@^1.14.2, resolve@^1.15.1, resolve@^1.22.0, resolve@^1.22.1, resolve@^1.22.4:
   version "1.22.6"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.6.tgz#dd209739eca3aef739c626fea1b4f3c506195362"
   integrity sha512-njhxM7mV12JfufShqGy3Rz8j11RPdLy4xi15UurGJeoHLfJpVXKdh3ueuOqbYUcDZnffr6X739JBo5LzyahEsw==
@@ -10398,15 +10331,6 @@ shell-quote@^1.6.1, shell-quote@^1.7.3:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.1.tgz#6dbf4db75515ad5bac63b4f1894c3a154c766680"
   integrity sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==
-
-shelljs@^0.7.8:
-  version "0.7.8"
-  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.8.tgz#decbcf874b0d1e5fb72e14b164a9683048e9acb3"
-  integrity sha512-/YF5Uk8hcwi7ima04ppkbA4RaRMdPMBfwAvAf8sufYOxsJRtbdoBsT8vGvlb+799BrlGdYrd+oczIA2eN2JdWA==
-  dependencies:
-    glob "^7.0.0"
-    interpret "^1.0.0"
-    rechoir "^0.6.2"
 
 shellwords@^0.1.1:
   version "0.1.1"
@@ -11528,14 +11452,6 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
-username@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/username/-/username-5.1.0.tgz#a7f9325adce2d0166448cdd55d4985b1360f2508"
-  integrity sha512-PCKbdWw85JsYMvmCv5GH3kXmM66rCd9m1hBEDutPNv94b/pqCMT4NtcKyeWYvLFiE8b+ha1Jdl8XAaUdPn5QTg==
-  dependencies:
-    execa "^1.0.0"
-    mem "^4.3.0"
-
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -11879,13 +11795,6 @@ xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
   integrity sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==
-
-xml-parser@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/xml-parser/-/xml-parser-1.2.1.tgz#c31f4c34f2975db82ad013222120592736156fcd"
-  integrity sha512-lPUzzmS0zdwcNtyNndCl2IwH172ozkUDqmfmH3FcuDzHVl552Kr6oNfsvteHabqTWhsrMgpijqZ/yT7Wo1/Pzw==
-  dependencies:
-    debug "^2.2.0"
 
 xml2js@0.6.0:
   version "0.6.0"

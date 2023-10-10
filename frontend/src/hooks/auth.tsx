@@ -1,11 +1,13 @@
 import React, { createContext, useCallback, useState, useContext } from 'react';
 import api from '../services/api';
+import { useToast } from './toast';
 
 interface User {
   id: string;
   name: string;
   email: string;
   avatar_url: string;
+  provider?: boolean;
 }
 
 interface AuthState {
@@ -28,6 +30,7 @@ interface AuthContextData {
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 const AuthProvider: React.FC = ({ children }) => {
+  const { addToast } = useToast();
   const [data, setData] = useState<AuthState>(() => {
     const token = localStorage.getItem('@GoBarber:token');
     const user = localStorage.getItem('@GoBarber:user');
@@ -58,6 +61,15 @@ const AuthProvider: React.FC = ({ children }) => {
 
     localStorage.setItem('@GoBarber:token', token);
     localStorage.setItem('@GoBarber:user', JSON.stringify(user));
+
+    if (!user.provider) {
+      addToast({
+        type: 'error',
+        title: 'Erro na autenticação',
+        description: 'O usuário não é um prestador',
+      });
+      return;
+    }
 
     api.defaults.headers.authorization = `Bearer ${token}`;
 

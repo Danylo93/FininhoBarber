@@ -8,12 +8,14 @@ import React, {
 
 import api from '../services/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Alert } from 'react-native';
 
 interface User {
   id: string;
   name: string;
   email: string;
   avatar_url: string;
+  provider: boolean;
 }
 
 interface AuthState {
@@ -70,6 +72,14 @@ const AuthProvider: React.FC = ({ children }) => {
     ]);
 
     api.defaults.headers.authorization = `Bearer ${token}`;
+
+    if (user.provider) {
+      Alert.alert(
+        'Erro no login',
+        'O usuário não pode ser prestador de serviços'
+      );
+      return;
+    }
 
     setData({ token, user });
   }, []);

@@ -42,7 +42,15 @@ const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
   const passwordInputRef = useRef<TextInput>(null);
   const navigation = useNavigation();
-  const { signIn } = useAuth();
+  const { signIn, user } = useAuth();
+
+  // if (user.provider) {
+  //     Alert.alert(
+  //       'Erro no login',
+  //       'O usuário não pode ser prestador de serviços'
+  //     );
+  //     return;
+  //   }
 
   const handleSignIn = useCallback(
     async (data: SignInFormData) => {
