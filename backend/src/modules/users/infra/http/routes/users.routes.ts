@@ -25,6 +25,7 @@ usersRouter.post(
       password: Joi.string().required(),
       provider: Joi.boolean(),
     },
+
   }),
    usersControllers.create);
 

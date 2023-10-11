@@ -134,7 +134,9 @@ const CreateAppointment: React.FC = () => {
 
   useEffect(() => {
     api.get('/providers').then(response => {
-      setProviders(response.data);
+     const providers = response.data.filter(item => item.provider === true);
+     setProviders(providers);
+      console.log("Teste::",providers);
     });
   }, []);
 

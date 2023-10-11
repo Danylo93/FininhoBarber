@@ -1,9 +1,9 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { FiArrowLeft, FiMail, FiUser, FiLock } from 'react-icons/fi';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, Switch, useHistory } from 'react-router-dom';
 
 import api from '../../services/api';
 
@@ -17,15 +17,23 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 import { Container, Content, AnimationContainer, Background } from './styles';
+import Toggle from '../../components/toggle';
 
 interface SignUpFormData {
   name: string;
   email: string;
   password: string;
+  provider: boolean;
 }
 
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
+  const [isChecked, setChecked] = useState(false);
+
+  const handleToggleChange = (): void => {
+    setChecked(!isChecked);
+    console.log(!isChecked);
+  };
   const { addToast } = useToast();
   const history = useHistory();
 
@@ -58,6 +66,7 @@ const SignUp: React.FC = () => {
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
+          console.log(errors);
 
           formRef.current?.setErrors(errors);
 
@@ -80,11 +89,15 @@ const SignUp: React.FC = () => {
 
       <Content>
         <AnimationContainer>
-        <img src={logoImg} alt="FininhoBarber" style={{width: 450, height: 100, padding: -30}}/>
-          <h3>Fininho Barber</h3>
+          <img
+            src={logoImg}
+            alt="FininhoBarber"
+            style={{ width: 450, height: 100, padding: -30 }}
+          />
+          <h3>Go Barber</h3>
 
           <Form ref={formRef} onSubmit={handleSubmit}>
-            <h1>Faça seu cadastro</h1>
+            <h1>Cadastre-se</h1>
 
             <Input name="name" icon={FiUser} placeholder="Nome" />
             <Input name="email" icon={FiMail} placeholder="E-mail" />

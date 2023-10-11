@@ -28,6 +28,7 @@ export interface Provider {
   id: string;
   name: string;
   avatar_url: string;
+  provider: boolean;
 }
 
 const Dashboard: React.FC = () => {
@@ -37,9 +38,13 @@ const Dashboard: React.FC = () => {
   const { navigate } = useNavigation();
   const theme = useTheme();
 
-  useEffect(() => {
-    api.get('/providers').then(response => {
-      setProviders(response.data);
+  useEffect(() =>  {
+   api.get('/providers').then(response => {
+      
+     
+     const providers = response.data.filter(item => item.provider === true);
+     setProviders(providers);
+      console.log("Teste::",providers);
     });
   }, []);
 
@@ -75,10 +80,11 @@ const Dashboard: React.FC = () => {
       </Header>
 
       <ProvidersList
-        data={providers}
+        data={providers.length > 0 ? providers : []}
         keyExtractor={provider => provider.id}
+        
         ListHeaderComponent={
-          <ProvidersListTitle>Cabeleireiros</ProvidersListTitle>
+          <ProvidersListTitle>Cabeleireiros:</ProvidersListTitle>
         }
         renderItem={({ item: provider }) => (
           <ProviderContainer

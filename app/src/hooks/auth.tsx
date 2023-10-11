@@ -75,8 +75,8 @@ const AuthProvider: React.FC = ({ children }) => {
 
     if (user.provider) {
       Alert.alert(
-        'Erro no login',
-        'O usuário não pode ser prestador de serviços'
+        'Atenção!!!',
+        'O usuário não pode ser o prestador de serviços'
       );
       return;
     }
