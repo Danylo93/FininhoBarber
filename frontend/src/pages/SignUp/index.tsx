@@ -17,7 +17,6 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 import { Container, Content, AnimationContainer, Background } from './styles';
-import Toggle from '../../components/toggle';
 
 interface SignUpFormData {
   name: string;
